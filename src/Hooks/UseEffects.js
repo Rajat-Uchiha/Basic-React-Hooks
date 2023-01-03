@@ -20,7 +20,7 @@ const UseEffects = () => {
   //     document.title = `Chats (${myNum})`;
   //   },[]);
 
-  //If we do not write this second argument then it will be called as many time as the state changes.
+  //If we do not write this second argument then it will be called as many time as the state changes .
   //   useEffect(() => {
   //     document.title = `Chats (${myNum})`;
   //   });
