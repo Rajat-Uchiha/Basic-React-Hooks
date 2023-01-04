@@ -2,10 +2,11 @@
 // import UseEffects from "./Components/UseEffects";
 // import UseReducers from "./Hooks/UseReducers";
 // import UseStateArrays from "./Hooks/UseStateArrays";
-// import FormData from "./Hooks/FormData";
-import UseEffects2 from "./Hooks/UseEffects2.js";
+// import UseEffects2 from "./Hooks/UseEffects2.js";
+// import ControlledFormData from "./Forms/ControlledFormData";
+import UncontrolledFormData from "./Forms/UncontrolledFormData";
 function App() {
-  return <UseEffects2 />;
+  return <UncontrolledFormData />;
 }
 
 export default App;

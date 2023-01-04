@@ -3,7 +3,7 @@
 import React from "react";
 import { useReducer } from "react";
 
-//It takes two arguments :- state and action
+//It takes two arguments :- state(current state) and action (pure function-> It doesn't produce any side effects and returns the same output if the same arguments are passed in.)
 const reducer = (state, action) => {
   if (action.type === "INCR") {
     state += 1;
@@ -18,7 +18,7 @@ const UseReducers = () => {
   const initialData = 10;
 
   //This is the syntax of using useReducer hook.It's syntax is similar to useState but it takes two parameters
-  // 1. Reducer:-which is a function. This is responsible for the change of the value of the state.
+  // 1. Reducer:-which is a pure function. This is responsible for the change of the value of the state.
   // 2. initialData:- initial value of the state variable.
 
   // It returns an array same as useState containing two elements
