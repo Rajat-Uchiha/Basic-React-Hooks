@@ -14,11 +14,16 @@ const UseEffects = () => {
     let doc = document.getElementById("myEle");
     doc.innerText = myNum;
   });
-
-  //When we give this array dependency then only once the useEffect will be called.
+ 
+  //When we give this array dependency then only once the useEffect will be called(on reload).
   //   useEffect(() => {
   //     document.title = `Chats (${myNum})`;
   //   },[]);
+
+  //Now if we want to invoke useEffect only when the value of myNum changes then, we can do so by giving the myNum in the array dependency
+  //   useEffect(() => {
+  //     document.title = `Chats (${myNum})`;
+  //   },[myNum]);
 
   //If we do not write this second argument then it will be called as many time as the state changes .
   //   useEffect(() => {
