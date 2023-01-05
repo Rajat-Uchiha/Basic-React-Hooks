@@ -1,0 +1,65 @@
+
+==REACT JS FOR BEGINNERS IN ONE VIDEO BY PROGRAMMING WITH MOSH.==
+
+* React is a javascript library used to create interactive user interfaces.(most popular user interfaces library)
+
+* Heart of all react applications are Components :- An independent piece of user interface which can be reused multiple times.
+
+* Every react application has atleast one csaomponent which is called the root component.(contains other child Components)
+
+* A typical component in react is a javascript class which contains a state and a render() method.
+Ex 
+class Tweet{
+
+    state = {}; // It includes the data which we want to display on the screen when the component is rendered.
+
+    render() {
+        // it is responsible for how the data shoud look like.
+    }
+    // Output of render method is a react element which is a simple javascript object that maps with DOM elements. It's not a real DOM element it's just a plain js object which represents that DOM element in memory.
+
+    //-React keeps lightweight DOM representation in the memory which is called Virtual DOM.
+
+    //-Virtual DOM is cheap to create.
+
+    When we change a component in virtual dom, a new element is created.
+    react then compares this element with the element in the real DOM and checks if both are in sync or not.
+    If not then react automatically modifies the real DOM according to the virtual DOM element.
+    
+    //*This means that we do not need to work with the dom apis to change the dom elements in like in vanilla javascript.
+    like there's no need to use querySelector() and addEventListeners();
+
+    //This is the reason why this library is called react.
+    because once the state changes, it reacts and updates the real DOM.
+
+    React vs Angular
+    
+}
+
+//Things to keep in mind while creating a component in react.
+.   import react from "react" //before version 17
+.   any one function (functional component)
+.   it should always return JSX that's an element.
+
+JSX uses camelCase convention. For example className, onClick.
+
+Nested component -> component inside a component.
+
+Hooks in React.js
+What is a HOOK :-
+A HOOK is a special type of function which is used to work with the variable in the function based components.
+
+1. useState:- This hook helps us to track the state in a function component.(It rereders our component.)
+              State generally refers to data or properties that need to be tracking in an application
+              While working with objects, we can use spread operator to change a single property of an object.
+
+2. useEffect:- The useEffect Hook allows you to perform side effects in your components.(fetching data, timers etc)
+               (when the component is  rendered, useEffect will again be invoked.)
+               It it invoked once the component is rendered.
+               Ex when we visit a website, after few seconds we see a subscribe button. That functionality becomes possible using useEffect.
+               
+               
+//!IN REACT WE HAVE TWO TYPES OF FORMS 
+//! 1.Controlled. ->   In which we need to use onChange attributes and need to pass current values.
+//! 2.Uncontrolled. -> uncontrolled Components are the components that are not controlled by the React state and are handled by
+                       the DOM (Document Object Model). So in order to access any value that has been entered we take the help of refs.
